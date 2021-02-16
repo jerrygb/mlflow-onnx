@@ -1,0 +1,11 @@
+name: sentence_classifier
+channels:
+  - defaults
+dependencies:
+  - numpy=1.19.2
+  - pandas=1.2.1
+  - python=3.8
+  - pip:
+      - mlflow
+      - onnx
+      - onnxruntime

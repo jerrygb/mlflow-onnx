@@ -1,0 +1,11 @@
+name: sentence_classifier
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      roberta_base_version: {type: string, default: "2c317e2e4d34d80adc89cdc958d55e5cdf6cb06c"}
+      roberta_model_version: {type: string, default: "bf6e73c4c68db02dc9cecd631a4a03a453932de0"}
+      upstream_roberta_base_version: {type: string, default: "841d321"}
+    command: "python main.py --roberta-base-version {roberta_base_version} --roberta-model-version {roberta_model_version} \
+            --upstream-roberta-base-version {upstream_roberta_base_version}"
+
